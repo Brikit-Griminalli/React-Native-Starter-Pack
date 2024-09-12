@@ -12,8 +12,7 @@ export default function Index() {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-      }}
-    >
+      }}>
       <View>
         <Button
           onPress={() => dispatch(increment())}
