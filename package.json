@@ -12,7 +12,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "test": "jest --watchAll",
-    "lint": "expo lint"
+    "test:eslint": "echo \"Running eslint check\" &&  eslint . --fix",
+    "test:tsc": "echo \"Running typescript check\" && tsc"
   },
   "jest": {
     "preset": "jest-expo"
@@ -22,6 +23,8 @@
     "@react-navigation/native": "^6.0.2",
     "@reduxjs/toolkit": "^2.2.7",
     "@types/react-redux": "^7.1.33",
+    "eslint": "^8.57.0",
+    "eslint-config-universe": "^13.0.0",
     "expo": "~51.0.28",
     "expo-constants": "~16.0.2",
     "expo-font": "~12.0.9",
@@ -31,6 +34,7 @@
     "expo-status-bar": "~1.12.1",
     "expo-system-ui": "~3.0.7",
     "expo-web-browser": "~13.0.3",
+    "prettier": "^3.3.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.74.5",
