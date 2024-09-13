@@ -11,9 +11,10 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "test": "jest --watchAll",
-    "test:eslint": "echo \"Running eslint check\" &&  eslint . --fix",
-    "test:tsc": "echo \"Running typescript check\" && tsc"
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "lint": "echo \"Running eslint check\" &&  eslint . --fix",
+    "tsc": "echo \"Running typescript check\" && tsc"
   },
   "jest": {
     "preset": "jest-expo"
