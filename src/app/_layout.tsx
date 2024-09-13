@@ -1,12 +1,12 @@
+import { store } from "@src/store/store";
 import { Stack } from "expo-router";
 import { Provider } from "react-redux";
-import { store } from "@/store/store";
 
 export default function RootLayout() {
   return (
     <Provider store={store}>
       <Stack>
-        <Stack.Screen name="index" />
+        <Stack.Screen name="inde x" />
       </Stack>
     </Provider>
   );

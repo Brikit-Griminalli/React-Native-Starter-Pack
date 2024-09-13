@@ -1,11 +1,13 @@
-import { Link } from "expo-router";
+import { Href, Link } from "expo-router";
 import { openBrowserAsync } from "expo-web-browser";
 import { type ComponentProps } from "react";
 import { Platform } from "react-native";
 
-type Props = Omit<ComponentProps<typeof Link>, "href"> & { href: string };
+type Props = Omit<ComponentProps<typeof Link>, "href"> & {
+  href: Href<string | object> | any;
+};
 
-export function ExternalLink({ href, ...rest }: Props) {
+export const ExternalLink = ({ href, ...rest }: Props) => {
   return (
     <Link
       target="_blank"
@@ -21,4 +23,4 @@ export function ExternalLink({ href, ...rest }: Props) {
       }}
     />
   );
-}
+};

@@ -1,7 +1,7 @@
-import { Button, View, Text } from "react-native";
-import { useSelector, useDispatch } from "react-redux";
-import type { RootState } from "@/store/store";
-import { decrement, increment } from "@/store/Reducer/Counter";
+import { decrement, increment } from "@src/store/Reducer/Counter";
+import type { RootState } from "@src/store/store";
+import { Button, Text, View } from "react-native";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function Index() {
   const count = useSelector((state: RootState) => state.counter.value);
