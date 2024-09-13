@@ -49,6 +49,7 @@ module.exports = {
     ],
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["off"],
+    "@typescript-eslint/no-unused-vars": 2,
     "import/prefer-default-export": "off",
     "react/prop-types": "off",
     "import/extensions": [
