@@ -1,5 +1,5 @@
-import { decrement, increment } from "@src/store/Reducer/Counter";
-import type { RootState } from "@src/store/store";
+import { decrement, increment } from "@src/redux/reducers/Counter";
+import type { RootState } from "@src/redux/store";
 import { Button, Text, View } from "react-native";
 import { useDispatch, useSelector } from "react-redux";
 
