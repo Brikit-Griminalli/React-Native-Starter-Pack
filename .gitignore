@@ -9,7 +9,7 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
-.husky
+.husky/_
 
 # macOS
 .DS_Store
